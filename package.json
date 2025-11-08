@@ -1,0 +1,24 @@
+{
+  "name": "carambar-back",
+  "version": "1.0.0",
+  "description": "Wild Code School Test (backend)",
+  "homepage": "https://github.com/Meltasy/carambar-back#readme",
+  "bugs": {
+    "url": "https://github.com/Meltasy/carambar-back/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Meltasy/carambar-back.git"
+  },
+  "license": "ISC",
+  "author": "Melissa Vialaneix",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --watch --env-file=.env app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
