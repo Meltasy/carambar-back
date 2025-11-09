@@ -1,13 +1,18 @@
 const express = require('express')
-const app = express()
 const { connectDB } = require('./database/db')
 const blaguesRouter = require('./routes/blaguesRouter')
 const cors = require('cors')
+const swaggerUi = require('swagger-ui-express')
+const swaggerSpec = require('./swagger')
+
+const app = express()
 
 connectDB()
 
 app.use(express.json())
 app.use(cors())
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 
 app.use('/v1/blagues', blaguesRouter)
 
@@ -37,4 +42,5 @@ app.listen(PORT, (error) => {
     throw error
   }
   console.log(`Ecoute sur le port ${PORT} !`)
+  console.log(`Documentation API disponible a ${PORT}.`)
 })
