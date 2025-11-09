@@ -23,9 +23,11 @@ app.use((err, req, res, next) => {
   })
 })
 
-app.listen(process.env.PORT, (error) => {
+const PORT = process.env.PORT || 3000
+
+app.listen(PORT, (error) => {
   if (error) {
     throw error
   }
-  console.log(`Ecoute sur le port ${process.env.PORT} !`)
+  console.log(`Ecoute sur le port $PORT} !`)
 })

@@ -8,7 +8,7 @@
 
 API backend pour une mini application web de blagues.
 
-Découvrez [Carambar Blagues](https://github.com/Meltasy/carambar-front) !
+Découvrez [Carambar Blagues](https://meltasy.github.io/carambar-front/) !
 
 ## Tech Stack
 
