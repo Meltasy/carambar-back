@@ -8,10 +8,6 @@
 
 API backend pour une mini application web de blagues.
 
-Découvrez [Carambar Blagues](https://carambar-back-5c9h.onrender.com/v1/) !
-
-Lire la [documentation API](https://carambar-back-5c9h.onrender.com/api-docs/).
-
 ## Tech Stack
 
 * Node.js avec le framework Express.js
